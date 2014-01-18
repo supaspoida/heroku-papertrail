@@ -7,7 +7,7 @@ class Heroku::Command::Papertrail < Heroku::Command::Run
   # open papertrail web interface
   def open
     puts "Opening papertrail"
-    system("addons:open papertrail")
+    system("heroku addons:open papertrail")
   end
   alias_command 'papertrail', 'papertrail:open'
 

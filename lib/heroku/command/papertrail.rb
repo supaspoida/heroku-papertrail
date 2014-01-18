@@ -6,7 +6,6 @@ class Heroku::Command::Papertrail < Heroku::Command::Run
   #
   # open papertrail web interface
   def open
-    puts Heroku::Command.global_options[:remote].inspect
     system("heroku addons:open papertrail")
   end
   alias_command 'papertrail', 'papertrail:open'
